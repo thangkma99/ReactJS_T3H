@@ -6,32 +6,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    header>div {
+      display: flex;
+    }
+    #logo {
+      width: 75px;
+      height: 75px;
+    }
+    ul {
+      list-style: none;
+      width: 25%;
+      padding-top: 25px;
+    }
+    li {
+      display: inline;
+      font-size: 18px;
+      margin: 10px;
+    }
+    h3 {
+      width: 70%;
+      text-align: left;
+      font-size: 30px;
+    }
+    main {
+      text-align: center;
+    }
+    form{
+      font-size: 25px;
+    }
+    input{
+      width: 300px;
+      height: 30px;
+      margin: 5px;
+    }
+    textarea{
+      width: 300px;
+      margin-left: 60px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      background-color: #E0DDE4;
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <img id="topPage" src="./images/logo.jpg" alt="logo">
-  <br>
-  <h3>Coffee Junkie</h3>
-  <ul>
-    <li><a href="#home.html">Home</a></li>
-    <li><a href="./about.html">About</a></li>
-    <li><a href="./number.html">Number</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-  </ul>
-  <img src="" alt="banner">
+  <header>
+    <div>
+      <img id="logo" src="./images/coffeelogo.png" alt="logo">
+      <h3>Coffee Junkie</h3>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./number.html">Numbers</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <img src="./images/banner.jpeg" width="100%" alt="banner">
+  </header>
 
-  <h1>Contact</h1>
-  <form action="">
-    <label for="name">Name</label>
-    <input type="text" placeholder="Enter your name" name="name" value=""><br>
-    <label for="email">Email</label>
-    <input type="email" placeholder="Enter your email" name="email"><br>
-    <label for="description">Description</label><br>
-    <textarea placeholder="Enter you description"></textarea>
-  </form>
+  <main>
+    <h1>Contact</h1>
+    <form action="">
+      <!-- Name -->
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+      <br>
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <!-- Description -->
+      <p>Description</p>
+      <textarea name="description" id="" cols="30" rows="10" placeholder="Your Description"></textarea>
+      <br>
+      <!-- Submit button -->
+      <button type="submit">Submit!</button>
+    </form>
+  </main>
 
-  <p>Copyright &copy;2019</p>
-  <a href="#topPage">Back to Top</a>
+  <footer>
+    <p>Copyright &copy;2019</p>
+    <a href="#logo">Back to top</a>
+  </footer>
 </body>
 
 </html>

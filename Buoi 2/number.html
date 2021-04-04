@@ -6,21 +6,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    header>div {
+      display: flex;
+    }
+    #logo {
+      width: 75px;
+      height: 75px;
+    }
+    ul {
+      list-style: none;
+      width: 25%;
+      padding-top: 25px;
+    }
+    li {
+      display: inline;
+      font-size: 18px;
+      margin: 10px;
+    }
+    h3 {
+      width: 70%;
+      text-align: left;
+      font-size: 30px;
+    }
+    main {
+      text-align: center;
+    }
+    table{
+      font-size: 30px;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      background-color: #E0DDE4;
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
-  <img id="topPage" src="./images/logo.jpg" alt="logo">
-  <br>
-  <h3>Coffee Junkie</h3>
-  <ul>
-    <li><a href="./home.html">Home</a></li>
-    <li><a href="./about.html">About</a></li>
-    <li><a href="./number.html">Number</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-  </ul>
-  <img src="" alt="banner">
+  <header>
+    <div>
+      <img id="logo" src="./images/coffeelogo.png" alt="logo">
+      <h3>Coffee Junkie</h3>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./number.html">Numbers</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <img src="./images/banner.jpeg" width="100%" alt="banner">
+  </header>
+
+  <main>
   <h1>Our stores</h1>
-  <table class="menu">
+  <table style="border:2px solid black; border-spacing:25px">
     <thead>
       <tr>
         <th>City</th>
@@ -43,11 +84,12 @@
         <td>$12.000</td>
       </tr>
     </tbody>
-  </table>
-
-
-  <p>Copyright &copy;2019</p>
-  <a href="#topPage">Back to Top</a>
+  </table></main>
+  
+  <footer>
+    <p>Copyright &copy;2019</p>
+    <a href="#logo">Back to top</a>
+  </footer>
 </body>
 
 </html>
